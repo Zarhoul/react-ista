@@ -36,7 +36,7 @@ function FiliereList() {
                                 />
                         ))}
                     </div>
-                </div><Footer />
+                </div>
             </div>
             
         </>
