@@ -3,7 +3,7 @@ import React from 'react'
 function DashboardStagiaire() {
     return (
         <>
-            <div>dashboardStagiaire</div>
+            <div>Dashboard Stagiaire</div>
         </>
     )
 }
