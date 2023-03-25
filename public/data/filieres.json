@@ -1,76 +1,140 @@
 [
     {
         "id": "1",
-        "name": "Getion de l'entreprise",
+        "name": "Développement Digital",
+        "year": "Première année",
+        "abbreviation": "DEV",
+        "level": "TS",
         "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
     },
     {
         "id": "2",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Développement Digital option Applications Mobiles",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEVOAM_TS"
     },
     {
         "id": "3",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Développement Digital option Web Full Stack",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEVOWFS_TS"
     },
     {
         "id": "4",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Infrastructure Digitale",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Infrastructure-Digitale/p/DIA_ID_TS"
     },
     {
         "id": "5",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Infrastructure Digitale option Cloud Computing",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Infrastructure-Digitale/p/DIA_IDOCC_TS"
     },
     {
         "id": "6",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Infrastructure Digitale option Systèmes et Réseaux",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Infrastructure-Digitale/p/DIA_IDOSR_TS"
     },
     {
         "id": "7",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Gestion des Entreprises",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Gestion-des-Entreprises/p/GC_GE_TS"
     },
     {
         "id": "8",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Gestion des Entreprises option Comptabilité et Finance",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Gestion-des-Entreprises/p/GC_GEOCF_TS"
     },
     {
         "id": "9",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Gestion des Entreprises option Commerce et Marketing",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Gestion-des-Entreprises/p/GC_GEOCM_TS"
     },
     {
         "id": "10",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Génie Civil",
+        "year": "Première année",
+        "abbreviation": "GC",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Génie-Civil/p/BTP_GCTC_TS"
     },
     {
         "id": "11",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Génie Civil",
+        "year": "Deuxième année",
+        "abbreviation": "GC",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Génie-Civil/p/BTP_GCTC_TS"
     },
     {
         "id": "12",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Assistant Administratif",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Assistant-Administratif/p/GC_AA_T"
     },
     {
         "id": "13",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+        "name": "Assistant Administratif option Comptabilité",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Assistant-Administratif/p/GC_AAOCP_T"
     },
     {
         "id": "14",
+        "name": "Dessinateur de Bâtiment",
+        "year": "Première année",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Dessinateur-de-Bâtiment/p/BTP_DB_T_RCDS"
+    },
+    {
+        "id": "15",
+        "name": "Dessinateur de Bâtiment",
+        "year": "Deuxième année",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Dessinateur-de-Bâtiment/p/BTP_DB_T_RCDS"
+    },
+    {
+        "id": "16",
         "name": "Développement digital",
         "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
     },
     {
-        "id": "15",
+        "id": "17",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "18",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "19",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "20",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "21",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "22",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "23",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "24",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "25",
+        "name": "Développement digital",
+        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    },
+    {
+        "id": "26",
         "name": "Développement digital",
         "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
     }
