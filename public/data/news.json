@@ -8,7 +8,7 @@
         "dateFin": "2023-10-12",
         "emplacement": "2023-10-12",
         "type": "Nouveauté",
-        "image": ";;;/images/image-1.jpg"
+        "image": "/images/image-1.jpg"
     },
     {
         "id": "2",
@@ -19,7 +19,7 @@
         "dateFin": "2023-10-12",
         "emplacement": "2023-10-12",
         "type": "Nouveauté",
-        "image": ";;;/images/image-1.jpg"
+        "image": "/images/image-1.jpg"
     },{
         "id": "3",
         "title": "Emploi du temps",
@@ -29,7 +29,7 @@
         "dateFin": "2023-10-12",
         "emplacement": "2023-10-12",
         "type": "Evénement",
-        "image": ";;;/images/image-1.jpg"
+        "image": "/images/image-1.jpg"
     },{
         "id": "4",
         "title": "Emploi du temps",
@@ -42,7 +42,7 @@
         "image": "/images/image-1.jpg"
     },{
         "id": "5",
-        "title": "Emploi du temps",
+        "title": "Emploi du sport",
         "description": "Développement de logiciels et applications informatiques",
         "date": "2023-11-25",
         "dateDebut": "2023-10-12",

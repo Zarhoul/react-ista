@@ -4,31 +4,39 @@ import { Outlet, Link } from 'react-router-dom';
 function NavBar() {
     return (
         <>
-            <nav className="navbar">
-                <div className="logo">
+            <nav className="bg-primary-color opacity-95 max-w-full h-24 flex flex-row flex-wrap">
+                <div className="flex basis-1/4 items-center justify-center">
                     <Link to="/">
                         <img className="img-logo" src="./images/Logo.svg" alt="logo" />
                     </Link>
                 </div>
-                <div className='menu-navbar'>
-                    <ul className="list-menu-navbar">
-                        <li className="elem-menu-navbar">
-                            <Link to="/" className='link-list'>Home</Link>
-                        </li>
-                        <li className="elem-menu-navbar">
-                            <Link to="/filieres" className='link-list'>Filières</Link>
-                        </li>
-                        <li className="elem-menu-navbar">
-                            <Link to="/news" className='link-list'>Nouveautés</Link>
-                        </li>
-                        <li className="elem-menu-navbar">
-                            <Link to="https://www.ofppt.ma/fr/inscription-en-ligne?utm_source=Bouton%20Inscription&utm_medium=CTA&utm_campaign=inscription" target='_blank' className='link-list'>Inscription</Link>
-                        </li>
+                <div className='flex basis-2/4 items-center justify-center'>
+                    <ul className="flex flex-row gap-x-0">
+                        <Link to="/" className='link-list'>
+                            <li className="font-medium tracking-wide p-4 text-base text-tertiary-color rounded hover:bg-hover-primary-color">
+                                Home
+                            </li>
+                        </Link>
+                        <Link to="/filieres" className='link-list'>
+                            <li className="font-medium tracking-wide p-4 text-base text-tertiary-color rounded hover:bg-hover-primary-color">
+                                Filières
+                            </li>
+                        </Link>
+                        <Link to="/news" className='link-list'>
+                            <li className="font-medium tracking-wide p-4 text-base text-tertiary-color rounded hover:bg-hover-primary-color">
+                                Nouveautés
+                            </li>
+                        </Link>
+                        <Link to="https://www.ofppt.ma/fr/inscription-en-ligne?utm_source=Bouton%20Inscription&utm_medium=CTA&utm_campaign=inscription" target='_blank' className='link-list'>
+                            <li className="font-medium tracking-wide p-4 text-base text-tertiary-color rounded hover:bg-hover-primary-color">
+                                Inscription
+                            </li>
+                        </Link>
                     </ul>
                 </div>
-                <div className='btns-navbar'>
-                    <Link to="/login" className="btn-login">Login</Link>
-                    <Link to="/espaceStagiaire" className="btn-espace-stagiaire">Mon Espace</Link>
+                <div className='flex basis-1/4 items-center justify-center flex-row gap-x-4'>
+                    <Link to="/login" className="text-tertiary-color font-medium tracking-wide p-4 text-base rounded hover:bg-hover-primary-color">Login</Link>
+                    <Link to="/espaceStagiaire" className="bg-tertiary-color text-primary-color font-medium tracking-wide p-4 text-base rounded hover:bg-hover-primary-color hover:text-tertiary-color">Mon Espace</Link>
                 </div>
             </nav>
 

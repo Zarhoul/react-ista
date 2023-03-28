@@ -4,17 +4,15 @@ import Infos from './assets/Infos';
 import Statistic from './assets/Statistic';
 import Filieres from './assets/Filieres';
 import News from './assets/News';
-import Footer from '../commun/Footer';
 
 const Home = () => {
   return (
     <>
-      <div className='home-container'>
+      <div className='h-5/6 flex flex-col'>
         <Infos />
         <Statistic />
         <News />
         <Filieres />
-        {/* <Footer /> */}
       </div>
     </>
     

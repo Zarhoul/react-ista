@@ -12,11 +12,11 @@ function Pagination({ totalItems, pageSize, currentPage, onPageChange }) {
 
   return (
     <>
-        <div className="card-filiere-pagination">
-            <ul className="pagination">
+        <div className="p-4">
+            <ul className="flex flex-row justify-center items-center p-6 gap-4">
                 {pages.map((page) => (
                 <li key={page} className={page === currentPage ? 'page-item active' : 'page-item'}>
-                    <button className="page-link" onClick={() => onPageChange(page)}>
+                    <button className=" w-10 h-10 p-2 font-medium text-lg bg-primary-color rounded-md flex justify-center items-center text-tertiary-color" onClick={() => onPageChange(page)}>
                     {page}
                     </button>
                 </li>

@@ -23,11 +23,11 @@ function News() {
 
     return (
         <>
-            <div className='child-section news'>
-                <div className='child header'>
-                    <div className='header-title'>Nouveautés</div>
-                    <div className='header-btn'>
-                        <Link to='/news' className='btn-link'>
+            <div className='flex flex-col grow'>
+                <div className='px-12 py-6 flex flex-rox justify-between items-center'>
+                    <div className='font-medium text-4xl text-primary-color'>Nouveautés</div>
+                    <div className='px-4 py-3 bg-primary-color rounded-md hover:bg-hover-primary-color'>
+                        <Link to='/news' className='flex flex-row text-tertiary-color font-medium justify-center items-center gap-x-2'>
                             Voir plus
                             <svg
                                 xmlns='/public/icons/arrowright.svg'
@@ -48,27 +48,32 @@ function News() {
                         </Link>
                     </div>
                 </div>
-                <div className='child content'>
-                    <div className='child-bigcard'>
+                <div className='w-full px-12 py-6 flex flex-row justify-center items-center gap-x-4'>
+                    <div className='basis-2/4'>
                         {news.length > 0 && (
-                            <NewsBigCard
-                                key={news[0].id}
-                                title={news[0].title}
-                                date={news[0].date}
-                                type={news[0].type}
-                                image={news[0].image}
-                            />
+                            <Link to={`/news/${news[0].id}`}>
+                                <NewsBigCard
+                                    key={news[0].id}
+                                    title={news[0].title}
+                                    date={news[0].date}
+                                    type={news[0].type}
+                                    image={news[0].image}
+                                />
+                            </Link>
                         )}
                     </div>
-                    <div className='child-minicard'>
+                    <div className='flex flex-col gap-y-2 basis-2/4'>
                         {news.slice(1, 3).map(({ id, title, date, type, image }) => (
-                            <NewsMiniCard 
-                                key={id} 
-                                title={title} 
-                                date={date} 
-                                type={type} 
-                                image={image} 
-                            />
+                            <Link to={`/news/${id}`}>
+                                <NewsMiniCard 
+                                    key={id} 
+                                    title={title} 
+                                    date={date} 
+                                    type={type} 
+                                    image={image} 
+                                />
+                            </Link>
+
                         ))}
                     </div>
                 </div>

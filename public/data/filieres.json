@@ -49,14 +49,14 @@
     },
     {
         "id": "10",
-        "name": "Génie Civil",
+        "name": "Génie Civil 1A",
         "year": "Première année",
         "abbreviation": "GC",
         "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Génie-Civil/p/BTP_GCTC_TS"
     },
     {
         "id": "11",
-        "name": "Génie Civil",
+        "name": "Génie Civil 2A",
         "year": "Deuxième année",
         "abbreviation": "GC",
         "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Génie-Civil/p/BTP_GCTC_TS"
@@ -74,13 +74,13 @@
     },
     {
         "id": "14",
-        "name": "Dessinateur de Bâtiment",
+        "name": "Dessinateur de Bâtiment 1A",
         "year": "Première année",
         "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Dessinateur-de-Bâtiment/p/BTP_DB_T_RCDS"
     },
     {
         "id": "15",
-        "name": "Dessinateur de Bâtiment",
+        "name": "Dessinateur de Bâtiment 2A",
         "year": "Deuxième année",
         "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Dessinateur-de-Bâtiment/p/BTP_DB_T_RCDS"
     },

@@ -16,15 +16,15 @@ function Statistic() {
 
     return (
         <>
-            <div className='child-section statistic'>
+            <div className='bg-primary-color flex flex-row p-6 justify-around items-center grow-0'>
                 {data.map((st) => (
-                    <div className={`child-statistic-${st.id}`} key={st.id}>
-                        <div className='child-statistic-icon'>
-                            <img src={st.icon} />
+                    <div className={`icon-${st.id}`} key={st.id}>
+                        <div className='flex justify-center items-cente'>
+                            <img src={st.icon} className='p-2 mb-2 border-2 border-tertiary-color rounded-full'/>
                         </div>
-                        <div className='child-statistic-text'>
-                            <span className='child-statistic-num'>{st.number}</span>
-                            <span className='child-statistic-text'>{st.title}</span>
+                        <div className='flex flex-col gap-y-1 justify-center items-center'>
+                            <span className='text-tertiary-color font-medium text-4xl'>{st.number}</span>
+                            <span className='text-tertiary-color opacity-60 font-medium text-3xl'>{st.title}</span>
                         </div>
                     </div>
                 ))}
