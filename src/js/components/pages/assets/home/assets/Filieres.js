@@ -24,9 +24,17 @@ function Filieres() {
     return (
         <>
             <div className='grow'>
-            <div className='px-12 py-6 flex flex-rox justify-between items-center'>
-                    <div className='font-medium text-4xl text-primary-color'>Filières Ista Assaka</div>
-                    <div className='px-4 py-3 bg-primary-color rounded-md hover:bg-hover-primary-color'>
+            <div className='px-12 py-6 flex flex-row justify-between items-center'>
+                    <div className='font-medium text-4xl text-primary-color
+                                    sm:text-3xl
+                                    md:text-4xl'
+                    >
+                    Filières Ista Assaka
+                    </div>
+                    <div className='px-4 py-3 bg-primary-color rounded-md hover:bg-hover-primary-color
+                                    sm:px-2 sm:py-2
+                                    md:px-3 md:py-3'
+                    >
                         <Link to='/filieres' className='flex flex-row text-tertiary-color font-medium justify-center items-center gap-x-2'>
                             Voir plus
                             <svg
@@ -48,7 +56,10 @@ function Filieres() {
                         </Link>
                     </div>
                 </div>
-                <div className='w-full px-12 py-6 flex flex-row flex-wrap justify-center items-center gap-4'>
+                <div className='w-full px-12 py-6 flex flex-row flex-wrap justify-center items-center gap-4
+                                md:gap-x-7
+                                lg:gap-4'
+                >
                     {listFilieres.map(({ id, ...filiereProps }) => (
                     <FiliereCardHome key={id} {...filiereProps} />
                     ))}

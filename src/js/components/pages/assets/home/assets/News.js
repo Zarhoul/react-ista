@@ -24,9 +24,17 @@ function News() {
     return (
         <>
             <div className='flex flex-col grow'>
-                <div className='px-12 py-6 flex flex-rox justify-between items-center'>
-                    <div className='font-medium text-4xl text-primary-color'>Nouveautés</div>
-                    <div className='px-4 py-3 bg-primary-color rounded-md hover:bg-hover-primary-color'>
+                <div className='px-12 py-6 flex flex-row justify-between items-center'>
+                    <div className='font-medium text-4xl text-primary-color
+                                    sm:text-3xl
+                                    md:text-4xl'
+                    >
+                    Nouveautés
+                    </div>
+                    <div className='px-4 py-3 bg-primary-color rounded-md hover:bg-hover-primary-color
+                                    sm:px-2 sm:py-2
+                                    md:px-3 md:py-3'
+                    >
                         <Link to='/news' className='flex flex-row text-tertiary-color font-medium justify-center items-center gap-x-2'>
                             Voir plus
                             <svg
@@ -48,7 +56,11 @@ function News() {
                         </Link>
                     </div>
                 </div>
-                <div className='w-full px-12 py-6 flex flex-row justify-center items-center gap-x-4'>
+                <div className='w-full px-12 py-6 flex flex-row justify-center items-center gap-x-4 
+                                sm:flex-col sm:gap-y-4
+                                md:flex-col md:gap-y-4
+                                lg:flex-row'
+                >
                     <div className='basis-2/4'>
                         {news.length > 0 && (
                             <Link to={`/news/${news[0].id}`}>
@@ -62,7 +74,11 @@ function News() {
                             </Link>
                         )}
                     </div>
-                    <div className='flex flex-col gap-y-2 basis-2/4'>
+                    <div className='flex flex-col gap-y-2 basis-2/4 md:flex-row 
+                                    sm:gap-y-4
+                                    md:gap-x-4
+                                    lg:flex-col'
+                    >
                         {news.slice(1, 3).map(({ id, title, date, type, image }) => (
                             <Link to={`/news/${id}`}>
                                 <NewsMiniCard 

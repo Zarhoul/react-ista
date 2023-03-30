@@ -8,7 +8,7 @@ import News from './assets/News';
 const Home = () => {
   return (
     <>
-      <div className='h-5/6 flex flex-col'>
+      <div className='h-full flex flex-col'>
         <Infos />
         <Statistic />
         <News />

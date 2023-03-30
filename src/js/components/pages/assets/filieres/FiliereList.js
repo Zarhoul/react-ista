@@ -34,13 +34,29 @@ function FiliereList() {
     <>
       <div className="h-5/6 flex flex-col">
         <div className="px-20 py-28 flex flex-row justify-center items-center gap-2">
-          <div className="w-3/4 p-2 mr-12 leading-relaxed font-bold text-5xl text-start break-words whitespace-normal overflow-hidden text-primary-color">
+          <div className="w-3/4 p-2 mr-12 leading-relaxed font-bold text-5xl text-start break-words whitespace-normal overflow-hidden text-primary-color
+                        sm:text-3xl sm:leading-relaxed
+                        md:text-4xl md:leading-relaxed
+                        lg:text-5xl lg:leading-relaxed"
+          >
             Institut Spécialisé de Technologie Appliquée Assaka Tikiouine offre
             des filières diversifiés, pour vous préparer aux enjeux de demain
           </div>
-          <div className=" h-80 w-6 bg-primary-color"></div>
-          <div className=" h-80 w-4 bg-primary-color"></div>
-          <div className=" h-80 w-2 bg-primary-color"></div>
+          <div className=" h-80 w-6 bg-primary-color
+                        sm:h-72
+                        md:h-80
+                        lg:h-96"
+          ></div>
+          <div className=" h-80 w-4 bg-primary-color
+                        sm:h-72
+                        md:h-80
+                        lg:h-96"
+          ></div>
+          <div className=" h-80 w-2 bg-primary-color
+                        sm:h-72
+                        md:h-80
+                        lg:h-96"
+          ></div>
         </div>
         <div className="px-32 py-6">
           <input
