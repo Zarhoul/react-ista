@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import NewsCard from './NewsCard';
 import Pagination from '../commun/Pagination';
+import NewsCardLoading from './NewsCardLoading';
 
 function NewsList() {
     const [news, setNews] = useState([]);
@@ -11,18 +12,23 @@ function NewsList() {
     const pageSize = 24;
     const [currentPage, setCurrentPage] = useState(1);
     const [filterType, setFilterType] = useState('');
+    const [isLoading, setIsLoading] = useState(true); // <-- add loading state
 
     useEffect(() => {
+        setTimeout(() => { // use a timeout to set the loading state after a certain amount of time
+          setIsLoading(false); // set loading to false after 2 seconds
+        }, 2000);
+    
         axios
-        .get('/data/news.json')
-        .then((response) => {
-            console.log(response.data); // <-- check if response data is an array
+          .get('/data/news.json')
+          .then((response) => {
+            console.log(response.data);
             setNews(response.data);
-        })
-        .catch((error) => {
+          })
+          .catch((error) => {
             console.log(error);
-        });
-    }, []);
+          });
+      }, []);
 
     const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
@@ -39,14 +45,6 @@ function NewsList() {
     return (
         <>
             <div className="h-5/6 flex flex-col">
-                <div className="px-20 py-28 flex flex-row justify-center items-center gap-2">
-                    <div className="w-3/4 p-2 mr-12 leading-relaxed font-bold text-5xl text-start break-words whitespace-normal overflow-hidden text-primary-color">
-                        Explorer les derniers nouveautées de ISTA Assaka
-                    </div>
-                    <div className=" h-80 w-6 bg-primary-color"></div>
-                    <div className=" h-80 w-4 bg-primary-color"></div>
-                    <div className=" h-80 w-2 bg-primary-color"></div>
-                </div>
             <div className="flex flex-col justify-center items-end px-32 py-6 gap-6">
                 <input
                     type="text"
@@ -59,15 +57,29 @@ function NewsList() {
                     {filterType === 'asc' ? 'Plus anciens' : 'Plus récents'}
                 </button>
             </div>
-            <div className="w-fit px-20 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
-            {filteredNews
-                .slice((currentPage - 1) * pageSize, currentPage * pageSize)
-                .map(( props ) => (
-                    <Link to={`/news/${props.id}&title=${props.title}`} className='w-fit flex flex-col basis-1/4 gap-x-4 shadow-xl hover:scale-95 transition duration-300'>
-                        <NewsCard {...props} key={props.id} />
-                    </Link>
-                ))}
-            </div>
+            {
+                isLoading 
+                ?
+                <div className="w-fit px-20 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
+                {filteredNews
+                    .slice((currentPage - 1) * pageSize, currentPage * pageSize)
+                    .map(( props ) => (
+                        <Link to={`/news/${props.id}&title=${props.title}`} className='w-fit flex flex-col basis-1/4 gap-x-4 shadow-xl hover:scale-95 transition duration-300'>
+                            <NewsCardLoading {...props} key={props.id} />
+                        </Link>
+                    ))}
+                </div>
+                :
+                <div className="w-fit px-20 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
+                {filteredNews
+                    .slice((currentPage - 1) * pageSize, currentPage * pageSize)
+                    .map(( props ) => (
+                        <Link to={`/news/${props.id}&title=${props.title}`} className='w-fit flex flex-col basis-1/4 gap-x-4 shadow-xl hover:scale-95 transition duration-300'>
+                            <NewsCard {...props} key={props.id} />
+                        </Link>
+                    ))}
+                </div>
+            }
             <Pagination
                 totalItems={news.length}
                 pageSize={pageSize}
