@@ -67,7 +67,7 @@ function FiliereList() {
     niveauFormation === '' || filiere.NiveauFormation === niveauFormation
   )
   .filter((filiere) =>
-    modeFormation === '' || (filiere.ModeFormation && filiere.modeFormation.includes(modeFormation))
+    modeFormation === '' || (filiere.ModeFormation && filiere.ModeFormation.includes(modeFormation))
 
   );
 
@@ -159,19 +159,19 @@ function FiliereList() {
       {isLoading ? 
         <div className="w-full px-12 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
           {filteredFilieres
-            .slice((currentPage - 1) * pageSize, currentPage * pageSize)
-            .map(({ idFormation, ...filiereProps }) => (
-              <FiliereCardLoading key={idFormation} {...filiereProps} />
+            .map(({ id, ...filiereProps }) => (
+              <FiliereCardLoading key={id} {...filiereProps} />
             ))}
         </div>
         :
         <div className="w-full px-12 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
           {filteredFilieres
             .slice((currentPage - 1) * pageSize, currentPage * pageSize)
-            .filter((filiere)=> filiere.year === "Première année")
-            .map(({ idFormation, ...filiereProps }) => (
-              <FiliereCard key={idFormation} {...filiereProps} />
-            ))}
+            .filter((filiere)=> filiere.AnneeEtude === "Première année")
+            .map(({ id, ...filiereProps }) => (
+              <FiliereCard key={id} {...filiereProps} />
+            ))
+            }
         </div>
         }
           <Pagination

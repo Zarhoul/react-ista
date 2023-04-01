@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 import FiliereCardHome from '../../filieres/FiliereCardHome';
+import NavBar from '../../commun/NavBar';
+import Footer from '../../commun/Footer';
 
 function Filieres() {
     const [filieres, setFilieres] = useState([]);
@@ -23,6 +25,7 @@ function Filieres() {
 
     return (
         <>
+            <NavBar />
             <div className='grow'>
             <div className='px-12 py-6 flex flex-row justify-between items-center'>
                     <div className='font-medium text-4xl text-primary-color
@@ -65,6 +68,7 @@ function Filieres() {
                     ))}
                 </div>
             </div>
+            <Footer />
         </>
     )
 }

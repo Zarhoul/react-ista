@@ -10,12 +10,12 @@ import EspaceStagiaire from '../src/js/components/auth/EspaceStagiaire';
 import NoPage from '../src/js/components/pages/assets/nopage/NoPage';
 import Footer from "./js/components/pages/assets/commun/Footer";
 import NewsDetails from "../src/js/components/pages/assets/news/NewsDetails";
+import DashboardAdmin from "./js/components/admin/DashboardAdmin";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <NavBar />
       <Routes>
           <Route index element={<Home />} />
           <Route path="infos" element={<InfosDetails />} />
@@ -25,8 +25,8 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="espaceStagiaire" element={<EspaceStagiaire />} />
           <Route path="*" element={<NoPage />} />
+          <Route path="dashboardAdmin" element={<DashboardAdmin />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
     </>
   );
