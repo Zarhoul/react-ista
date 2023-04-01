@@ -1,144 +1,453 @@
 [
     {
-        "id": "1",
-        "name": "Développement Digital",
-        "year": "Première année",
-        "abbreviation": "DEV",
-        "level": "TS",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 1,
+    "NameFormation": "Développement Digital",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Bachelier",
+    "url": ""
     },
     {
-        "id": "2",
-        "name": "Développement Digital option Applications Mobiles",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEVOAM_TS"
+    "idFormation": 2,
+    "NameFormation": "Gestion des Entreprises",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
+    "NiveauScolaire": "Bachelier",
+    "url": ""
     },
     {
-        "id": "3",
-        "name": "Développement Digital option Web Full Stack",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEVOWFS_TS"
+    "idFormation": 3,
+    "NameFormation": "Génie Civil",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
+    "NiveauScolaire": "Bachelier",
+    "url": ""
     },
     {
-        "id": "4",
-        "name": "Infrastructure Digitale",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Infrastructure-Digitale/p/DIA_ID_TS"
+    "idFormation": 4,
+    "NameFormation": "Assistant Administratif",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Lycéen",
+    "url": ""
     },
     {
-        "id": "5",
-        "name": "Infrastructure Digitale option Cloud Computing",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Infrastructure-Digitale/p/DIA_IDOCC_TS"
+    "idFormation": 5,
+    "NameFormation": "Technicien Dessinateur de Bâtiment",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Lycéen",
+    "url": ""
     },
     {
-        "id": "6",
-        "name": "Infrastructure Digitale option Systèmes et Réseaux",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Infrastructure-Digitale/p/DIA_IDOSR_TS"
+    "idFormation": 6,
+    "NameFormation": "Technicien en Electricité de Maintenance Industrielle",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Lycéen",
+    "url": ""
     },
     {
-        "id": "7",
-        "name": "Gestion des Entreprises",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Gestion-des-Entreprises/p/GC_GE_TS"
+    "idFormation": 7,
+    "NameFormation": "Technicien en Réparation des Engins à Moteur (Option: Automobile)",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Lycéen",
+    "url": ""
     },
     {
-        "id": "8",
-        "name": "Gestion des Entreprises option Comptabilité et Finance",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Gestion-des-Entreprises/p/GC_GEOCF_TS"
+    "idFormation": 8,
+    "NameFormation": "Electricité de Bâtiment",
+    "abbreviation": "",
+    "NiveauFormation": "Spécialisation",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Elève du primaire",
+    "url": ""
     },
     {
-        "id": "9",
-        "name": "Gestion des Entreprises option Commerce et Marketing",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Gestion-des-Entreprises/p/GC_GEOCM_TS"
+    "idFormation": 9,
+    "NameFormation": "Menuiserie Aluminium",
+    "abbreviation": "",
+    "NiveauFormation": "Spécialisation",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Elève du primaire",
+    "url": ""
     },
     {
-        "id": "10",
-        "name": "Génie Civil 1A",
-        "year": "Première année",
-        "abbreviation": "GC",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Génie-Civil/p/BTP_GCTC_TS"
+    "idFormation": 10,
+    "NameFormation": "Agent d'Entretien en Froid et Génie Thermique",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Collegien",
+    "url": ""
     },
     {
-        "id": "11",
-        "name": "Génie Civil 2A",
-        "year": "Deuxième année",
-        "abbreviation": "GC",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Génie-Civil/p/BTP_GCTC_TS"
+    "idFormation": 11,
+    "NameFormation": "Électricité d'Installation",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Collegien",
+    "url": ""
     },
     {
-        "id": "12",
-        "name": "Assistant Administratif",
-        "year": "Première année",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Assistant-Administratif/p/GC_AA_T"
+    "idFormation": 12,
+    "NameFormation": "Menuiserie",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Collegien",
+    "url": ""
     },
     {
-        "id": "13",
-        "name": "Assistant Administratif option Comptabilité",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Gestion-et-Commerce/Assistant-Administratif/p/GC_AAOCP_T"
+    "idFormation": 13,
+    "NameFormation": "Réparateur de Véhicules Automobiles",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
+    "NiveauScolaire": "Collegien",
+    "url": ""
     },
     {
-        "id": "14",
-        "name": "Dessinateur de Bâtiment 1A",
-        "year": "Première année",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Dessinateur-de-Bâtiment/p/BTP_DB_T_RCDS"
+    "idFormation": 14,
+    "NameFormation": "Tronc commun professionnel service",
+    "abbreviation": "",
+    "NiveauFormation": "BP",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "",
+    "url": ""
     },
     {
-        "id": "15",
-        "name": "Dessinateur de Bâtiment 2A",
-        "year": "Deuxième année",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Bâtiment-et-Travaux-Publics-Matériaux-de-construction/Bâtiment-et-Travaux-Publics/Dessinateur-de-Bâtiment/p/BTP_DB_T_RCDS"
+    "idFormation": 15,
+    "NameFormation": "Tronc cummun professionnel industriel",
+    "abbreviation": "",
+    "NiveauFormation": "BP",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "",
+    "url": ""
     },
     {
-        "id": "16",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 16,
+    "NameFormation": "Certification Microsoft Office Specialist en Excel",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Qualifiante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
+    "NiveauScolaire": "Lycéen",
+    "url": ""
     },
     {
-        "id": "17",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 17,
+    "NameFormation": "Certification Microsoft Office Specialist en Word",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Qualifiante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
+    "NiveauScolaire": "Lycéen",
+    "url": ""
     },
     {
-        "id": "18",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 18,
+    "NameFormation": "Programme d`Innovation Entrepreneuriale",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Qualifiante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Lycéen",
+    "url": ""
     },
     {
-        "id": "19",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 19,
+    "NameFormation": "Mécanicien Service Rapide",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Qualifiante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Collegien",
+    "url": ""
     },
     {
-        "id": "20",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 20,
+    "NameFormation": " Gestion des Entreprises",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Bachelier",
+    "url": ""
     },
     {
-        "id": "21",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 21,
+    "NameFormation": " Génie Civil",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Bachelier",
+    "url": ""
     },
     {
-        "id": "22",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 22,
+    "NameFormation": "Certification Microsoft Office Specialist en Excel (T",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Qualifiante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Lycéen",
+    "url": ""
     },
     {
-        "id": "23",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 23,
+    "NameFormation": "Réparateur de véhicule automobile (MAALEM",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Qualifiante",
+    "AnneeEtude": "Première année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": "Collegien",
+    "url": ""
     },
     {
-        "id": "24",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 24,
+    "NameFormation": "Développement Digital option Applications Mobiles",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
     },
     {
-        "id": "25",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 25,
+    "NameFormation": "Développement Digital option Web Full Stack",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
     },
     {
-        "id": "26",
-        "name": "Développement digital",
-        "url": "https://www.myway.ac.ma/ofppt/fr/FILIÈRES/Digital-et-Intelligence-Artificielle/Développement-Digital/p/DIA_DEV_TS"
+    "idFormation": 26,
+    "NameFormation": "Gestion des Entreprises option Commerce et Marketing",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 27,
+    "NameFormation": "Gestion des Entreprises option Comptabilité et Finance",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 28,
+    "NameFormation": "Infrastructure Digitale option Cloud Computing",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 29,
+    "NameFormation": "Infrastructure Digitale option Systèmes et Réseaux",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 30,
+    "NameFormation": "Technicien Spécialisé Génie Civil",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 31,
+    "NameFormation": "Assistant Administratif option Comptabilité",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 32,
+    "NameFormation": "Technicien Dessinateur de Bâtiment",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 33,
+    "NameFormation": "Technicien en Electricité de Maintenance Industrielle",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 34,
+    "NameFormation": "Technicien en Réparation des Engins à Moteur (Option: Automobile)",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 35,
+    "NameFormation": "Agent d`Entretien en Froid et Génie Thermique option Frigoriste",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 36,
+    "NameFormation": "Agent d`Entretien en Froid et Génie Thermique option Génie Climatique",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 37,
+    "NameFormation": "Électricité d`Installation",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 38,
+    "NameFormation": "Electricité d'Installation",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 39,
+    "NameFormation": "Menuiserie option Aluminium et Bois",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 40,
+    "NameFormation": "Réparateur de Véhicules Automobiles",
+    "abbreviation": "",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 41,
+    "NameFormation": "Programme d`Innovation Entrepreneuriale",
+    "abbreviation": "",
+    "NiveauFormation": "Technicien",
+    "TypeFormation": "Qualifiante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
     }
 ]
-
-
