@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
+import NavBar from '../commun/NavBar';
+import Footer from '../commun/Footer';
 import FiliereCard from './FiliereCard';
 import Pagination from '../commun/Pagination';
 import FiliereCardLoading from './FiliereCardLoading';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function FiliereList() {
   const [filieres, setFilieres] = useState([]);
@@ -79,6 +81,7 @@ function FiliereList() {
 
   return (
     <>
+      <NavBar />
       <div className="max-h-max flex flex-col">
         <div className="px-32 py-6 flex flex-wrap flex-col gap-4" id='myDIV'>
           <input
@@ -181,6 +184,7 @@ function FiliereList() {
             onPageChange={handlePageChange}
           />
         </div>
+        <Footer />
     </>
   );
 }

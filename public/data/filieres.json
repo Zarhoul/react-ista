@@ -2,7 +2,7 @@
     {
     "idFormation": 1,
     "NameFormation": "Développement Digital",
-    "abbreviation": "",
+    "abbreviation": "DEV",
     "NiveauFormation": "Technicien spécialisé",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -13,7 +13,7 @@
     {
     "idFormation": 2,
     "NameFormation": "Gestion des Entreprises",
-    "abbreviation": "",
+    "abbreviation": "GE",
     "NiveauFormation": "Technicien spécialisé",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -24,7 +24,7 @@
     {
     "idFormation": 3,
     "NameFormation": "Génie Civil",
-    "abbreviation": "",
+    "abbreviation": "GC",
     "NiveauFormation": "Technicien spécialisé",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -35,7 +35,7 @@
     {
     "idFormation": 4,
     "NameFormation": "Assistant Administratif",
-    "abbreviation": "",
+    "abbreviation": "AA",
     "NiveauFormation": "Technicien",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -46,7 +46,7 @@
     {
     "idFormation": 5,
     "NameFormation": "Technicien Dessinateur de Bâtiment",
-    "abbreviation": "",
+    "abbreviation": "TDB",
     "NiveauFormation": "Technicien",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -68,7 +68,7 @@
     {
     "idFormation": 7,
     "NameFormation": "Technicien en Réparation des Engins à Moteur (Option: Automobile)",
-    "abbreviation": "",
+    "abbreviation": "TREM",
     "NiveauFormation": "Technicien",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -79,7 +79,7 @@
     {
     "idFormation": 8,
     "NameFormation": "Electricité de Bâtiment",
-    "abbreviation": "",
+    "abbreviation": "EB",
     "NiveauFormation": "Spécialisation",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -90,7 +90,7 @@
     {
     "idFormation": 9,
     "NameFormation": "Menuiserie Aluminium",
-    "abbreviation": "",
+    "abbreviation": "MA",
     "NiveauFormation": "Spécialisation",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -112,7 +112,7 @@
     {
     "idFormation": 11,
     "NameFormation": "Électricité d'Installation",
-    "abbreviation": "",
+    "abbreviation": "EI",
     "NiveauFormation": "Qualification",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -123,7 +123,7 @@
     {
     "idFormation": 12,
     "NameFormation": "Menuiserie",
-    "abbreviation": "",
+    "abbreviation": "M",
     "NiveauFormation": "Qualification",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -134,7 +134,7 @@
     {
     "idFormation": 13,
     "NameFormation": "Réparateur de Véhicules Automobiles",
-    "abbreviation": "",
+    "abbreviation": "RVA",
     "NiveauFormation": "Qualification",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Première année",
@@ -189,7 +189,7 @@
     {
     "idFormation": 18,
     "NameFormation": "Programme d`Innovation Entrepreneuriale",
-    "abbreviation": "",
+    "abbreviation": "PIE",
     "NiveauFormation": "Technicien",
     "TypeFormation": "Qualifiante",
     "AnneeEtude": "Première année",
@@ -200,7 +200,7 @@
     {
     "idFormation": 19,
     "NameFormation": "Mécanicien Service Rapide",
-    "abbreviation": "",
+    "abbreviation": "MSR",
     "NiveauFormation": "Qualification",
     "TypeFormation": "Qualifiante",
     "AnneeEtude": "Première année",
@@ -210,29 +210,7 @@
     },
     {
     "idFormation": 20,
-    "NameFormation": " Gestion des Entreprises",
-    "abbreviation": "",
-    "NiveauFormation": "Technicien spécialisé",
-    "TypeFormation": "Diplômante",
-    "AnneeEtude": "Première année",
-    "ModeFormation": ["Cours du jour"],
-    "NiveauScolaire": "Bachelier",
-    "url": ""
-    },
-    {
-    "idFormation": 21,
-    "NameFormation": " Génie Civil",
-    "abbreviation": "",
-    "NiveauFormation": "Technicien spécialisé",
-    "TypeFormation": "Diplômante",
-    "AnneeEtude": "Première année",
-    "ModeFormation": ["Cours du jour"],
-    "NiveauScolaire": "Bachelier",
-    "url": ""
-    },
-    {
-    "idFormation": 22,
-    "NameFormation": "Certification Microsoft Office Specialist en Excel (T",
+    "NameFormation": "Certification Microsoft Office Specialist en Excel",
     "abbreviation": "",
     "NiveauFormation": "Technicien",
     "TypeFormation": "Qualifiante",
@@ -242,8 +220,8 @@
     "url": ""
     },
     {
-    "idFormation": 23,
-    "NameFormation": "Réparateur de véhicule automobile (MAALEM",
+    "idFormation": 21,
+    "NameFormation": "Réparateur de véhicule automobile (MAALEM)",
     "abbreviation": "",
     "NiveauFormation": "Qualification",
     "TypeFormation": "Qualifiante",
@@ -253,31 +231,53 @@
     "url": ""
     },
     {
-    "idFormation": 24,
+    "idFormation": 22,
     "NameFormation": "Développement Digital option Applications Mobiles",
-    "abbreviation": "",
+    "abbreviation": "DDAM",
     "NiveauFormation": "Technicien spécialisé",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Deuxième année",
     "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 23,
+    "NameFormation": "Développement Digital option Web Full Stack",
+    "abbreviation": "DDWFS",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 24,
+    "NameFormation": "Gestion des Entreprises option Commerce et Marketing",
+    "abbreviation": "GECM",
+    "NiveauFormation": "Technicien spécialisé",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
     "NiveauScolaire": null,
     "url": ""
     },
     {
     "idFormation": 25,
-    "NameFormation": "Développement Digital option Web Full Stack",
-    "abbreviation": "",
+    "NameFormation": "Gestion des Entreprises option Comptabilité et Finance",
+    "abbreviation": "GECF",
     "NiveauFormation": "Technicien spécialisé",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Deuxième année",
-    "ModeFormation": ["Cours du jour"],
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
     "NiveauScolaire": null,
     "url": ""
     },
     {
     "idFormation": 26,
-    "NameFormation": "Gestion des Entreprises option Commerce et Marketing",
-    "abbreviation": "",
+    "NameFormation": "Infrastructure Digitale option Cloud Computing",
+    "abbreviation": "IDCC",
     "NiveauFormation": "Technicien spécialisé",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Deuxième année",
@@ -287,8 +287,8 @@
     },
     {
     "idFormation": 27,
-    "NameFormation": "Gestion des Entreprises option Comptabilité et Finance",
-    "abbreviation": "",
+    "NameFormation": "Infrastructure Digitale option Systèmes et Réseaux",
+    "abbreviation": "IDSR",
     "NiveauFormation": "Technicien spécialisé",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Deuxième année",
@@ -298,31 +298,31 @@
     },
     {
     "idFormation": 28,
-    "NameFormation": "Infrastructure Digitale option Cloud Computing",
-    "abbreviation": "",
+    "NameFormation": "Technicien Spécialisé Génie Civil",
+    "abbreviation": "GC",
     "NiveauFormation": "Technicien spécialisé",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Deuxième année",
-    "ModeFormation": ["Cours du jour"],
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
     "NiveauScolaire": null,
     "url": ""
     },
     {
     "idFormation": 29,
-    "NameFormation": "Infrastructure Digitale option Systèmes et Réseaux",
-    "abbreviation": "",
-    "NiveauFormation": "Technicien spécialisé",
+    "NameFormation": "Assistant Administratif option Comptabilité",
+    "abbreviation": "AAC",
+    "NiveauFormation": "Technicien",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Deuxième année",
-    "ModeFormation": ["Cours du jour"],
+    "ModeFormation": ["Cours du jour", "Cours du soir"],
     "NiveauScolaire": null,
     "url": ""
     },
     {
     "idFormation": 30,
-    "NameFormation": "Technicien Spécialisé Génie Civil",
-    "abbreviation": "",
-    "NiveauFormation": "Technicien spécialisé",
+    "NameFormation": "Technicien Dessinateur de Bâtiment",
+    "abbreviation": "TDB",
+    "NiveauFormation": "Technicien",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Deuxième année",
     "ModeFormation": ["Cours du jour"],
@@ -331,28 +331,6 @@
     },
     {
     "idFormation": 31,
-    "NameFormation": "Assistant Administratif option Comptabilité",
-    "abbreviation": "",
-    "NiveauFormation": "Technicien",
-    "TypeFormation": "Diplômante",
-    "AnneeEtude": "Deuxième année",
-    "ModeFormation": ["Cours du jour"],
-    "NiveauScolaire": null,
-    "url": ""
-    },
-    {
-    "idFormation": 32,
-    "NameFormation": "Technicien Dessinateur de Bâtiment",
-    "abbreviation": "",
-    "NiveauFormation": "Technicien",
-    "TypeFormation": "Diplômante",
-    "AnneeEtude": "Deuxième année",
-    "ModeFormation": ["Cours du jour"],
-    "NiveauScolaire": null,
-    "url": ""
-    },
-    {
-    "idFormation": 33,
     "NameFormation": "Technicien en Electricité de Maintenance Industrielle",
     "abbreviation": "",
     "NiveauFormation": "Technicien",
@@ -363,7 +341,7 @@
     "url": ""
     },
     {
-    "idFormation": 34,
+    "idFormation": 32,
     "NameFormation": "Technicien en Réparation des Engins à Moteur (Option: Automobile)",
     "abbreviation": "",
     "NiveauFormation": "Technicien",
@@ -374,7 +352,7 @@
     "url": ""
     },
     {
-    "idFormation": 35,
+    "idFormation": 33,
     "NameFormation": "Agent d`Entretien en Froid et Génie Thermique option Frigoriste",
     "abbreviation": "",
     "NiveauFormation": "Qualification",
@@ -385,7 +363,7 @@
     "url": ""
     },
     {
-    "idFormation": 36,
+    "idFormation": 34,
     "NameFormation": "Agent d`Entretien en Froid et Génie Thermique option Génie Climatique",
     "abbreviation": "",
     "NiveauFormation": "Qualification",
@@ -396,9 +374,31 @@
     "url": ""
     },
     {
-    "idFormation": 37,
+    "idFormation": 35,
     "NameFormation": "Électricité d`Installation",
-    "abbreviation": "",
+    "abbreviation": "EI",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 36,
+    "NameFormation": "Menuiserie option Aluminium et Bois",
+    "abbreviation": "MAB",
+    "NiveauFormation": "Qualification",
+    "TypeFormation": "Diplômante",
+    "AnneeEtude": "Deuxième année",
+    "ModeFormation": ["Cours du jour"],
+    "NiveauScolaire": null,
+    "url": ""
+    },
+    {
+    "idFormation": 37,
+    "NameFormation": "Réparateur de Véhicules Automobiles",
+    "abbreviation": "RVA",
     "NiveauFormation": "Qualification",
     "TypeFormation": "Diplômante",
     "AnneeEtude": "Deuxième année",
@@ -408,41 +408,8 @@
     },
     {
     "idFormation": 38,
-    "NameFormation": "Electricité d'Installation",
-    "abbreviation": "",
-    "NiveauFormation": "Qualification",
-    "TypeFormation": "Diplômante",
-    "AnneeEtude": "Deuxième année",
-    "ModeFormation": ["Cours du jour"],
-    "NiveauScolaire": null,
-    "url": ""
-    },
-    {
-    "idFormation": 39,
-    "NameFormation": "Menuiserie option Aluminium et Bois",
-    "abbreviation": "",
-    "NiveauFormation": "Qualification",
-    "TypeFormation": "Diplômante",
-    "AnneeEtude": "Deuxième année",
-    "ModeFormation": ["Cours du jour"],
-    "NiveauScolaire": null,
-    "url": ""
-    },
-    {
-    "idFormation": 40,
-    "NameFormation": "Réparateur de Véhicules Automobiles",
-    "abbreviation": "",
-    "NiveauFormation": "Qualification",
-    "TypeFormation": "Diplômante",
-    "AnneeEtude": "Deuxième année",
-    "ModeFormation": ["Cours du jour"],
-    "NiveauScolaire": null,
-    "url": ""
-    },
-    {
-    "idFormation": 41,
     "NameFormation": "Programme d`Innovation Entrepreneuriale",
-    "abbreviation": "",
+    "abbreviation": "PIE",
     "NiveauFormation": "Technicien",
     "TypeFormation": "Qualifiante",
     "AnneeEtude": "Deuxième année",
