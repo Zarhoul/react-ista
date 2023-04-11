@@ -10,10 +10,10 @@ function ListStagiaire() {
     const [searchResults, setSearchResults] = useState([]);
 
     useEffect(() => {
-        axios.get('/data/stagiaires.json')
+        axios.get('/data/users.json')
         .then((response) => {
-            console.log(response.data);
-            setStagiaires(response.data);
+            const stgs = response.data.filter(s => s.role[0].idRole === "4");
+            setStagiaires(stgs);
         })
         .catch((error) => {
             console.log(error);
@@ -50,25 +50,20 @@ function ListStagiaire() {
                             className='w-full h-10 p-4 basis-5/6 flex justify-start items-center border-2 border-solid rounded-md border-extend-secondary-color-600 focus:outline-none focus:outline-2 focus:border-extend-secondary-color text-lg'
                             value={searchQuery}
                             onChange={handleSearch}
-                        />                         
-                            <Link to="" className='w-full h-10 p-4 basis-1/6 flex text-sm font-medium text-tertiary-color justify-center items-center bg-primary-color rounded'>
-                                Ajouter un stagiaire
-                            </Link>
+                        />
                         </form>
                     </div>
                     <div className='w-full h-full p-4'>
                     <table className='w-full block'>
                       <thead className='w-full table'>
                         <tr className='w-full p-4 border-b-2 flex justify-start items-center'>
-                            <th className='w-1/12 text-start'>N°</th>
                             <th className='w-2/12 text-start'>Nom</th>
                             <th className='w-2/12 text-start'>Prénom</th>
                             <th className='w-2/12 text-start'>Date naissance</th>
                             <th className='w-2/12 text-start'>CIN</th>
                             <th className='w-2/12 text-start'>Téléphone</th>
                             <th className='w-2/12 text-start'>Filière</th>
-                            <th className='w-2/12 text-start'>Diplômat</th>
-                            <th className='w-2/12 text-start'></th>
+                            <th className='w-3/12 text-start'></th>
                         </tr>
                       </thead>
                       <tbody className='w-full h-80 block overflow-y-scroll'>
@@ -76,19 +71,17 @@ function ListStagiaire() {
                             searchResults.length > 0 ? (
                                 searchResults.map((s)=> (
                                     <tr className='w-full p-4 border-b-2 flex justify-start items-center' key={s.id}>
-                                        <td className='w-1/12 text-start'>{s.id}</td>
                                         <td className='w-2/12 text-start'>{s.lastName}</td>
                                         <td className='w-2/12 text-start'>{s.firstName}</td>
                                         <td className='w-2/12 text-start'>{s.dateNaissance}</td>
                                         <td className='w-2/12 text-start'>{s.cin}</td>
                                         <td className='w-2/12 text-start'>{s.telephone}</td>
                                         <td className='w-2/12 text-start'>{s.filiere[0].NameFormation}</td>
-                                        <td className='w-2/12 text-start'>{s.diplomat}</td>
-                                        <td className='w-2/12 flex flex-row gap-2'>
-                                            <Link to="" className="p-2 rounded text-sm font-medium text-tertiary-color bg-blue-600">
+                                        <td className='w-3/12 flex flex-row justify-center gap-2'>
+                                            <Link to={`/dashboardAdmin/users/ListStagiaires/ProfilStagiaire/${s.id}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-blue-600">
                                                 Profil
                                             </Link>
-                                            <Link to='' className="p-2 rounded text-sm font-medium text-tertiary-color bg-green-600">
+                                            <Link to={`/dashboardAdmin/users/ListStagiaires/EditStagiaire/${s.id}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-green-600">
                                                 Editer
                                             </Link>                                            
                                             <Link to="" className="p-2 rounded text-sm font-medium text-tertiary-color bg-red-600">
@@ -101,19 +94,17 @@ function ListStagiaire() {
                             : (
                                 stagiaires.map((s)=> (
                                     <tr className='w-full p-4 border-b-2 flex justify-start items-center' key={s.id}>
-                                        <td className='w-1/12 text-start'>{s.id}</td>
                                         <td className='w-2/12 text-start'>{s.lastName}</td>
                                         <td className='w-2/12 text-start'>{s.firstName}</td>
                                         <td className='w-2/12 text-start'>{s.dateNaissance}</td>
                                         <td className='w-2/12 text-start'>{s.cin}</td>
                                         <td className='w-2/12 text-start'>{s.telephone}</td>
                                         <td className='w-2/12 text-start'>{s.filiere[0].NameFormation}</td>
-                                        <td className='w-2/12 text-start'>{s.diplomat}</td>
-                                        <td className='w-2/12 text-start flex flex-row gap-2'>
-                                            <Link to="" className="p-2 rounded text-sm font-medium text-tertiary-color bg-blue-600">
+                                        <td className='w-3/12 text-start flex flex-row justify-center gap-2'>
+                                            <Link to={`/dashboardAdmin/users/ListStagiaires/ProfilStagiaire/${s.id}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-blue-600">
                                                 Profil
                                             </Link>
-                                            <Link to='' className="p-2 rounded text-sm font-medium text-tertiary-color bg-green-600">
+                                            <Link to={`/dashboardAdmin/users/ListStagiaires/EditStagiaire/${s.id}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-green-600">
                                                 Editer
                                             </Link>                                           
                                             <Link to="" className="p-2 rounded text-sm font-medium text-tertiary-color bg-red-600">

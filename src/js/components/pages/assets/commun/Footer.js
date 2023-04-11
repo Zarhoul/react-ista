@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet, Link } from 'react-router-dom'
+import { BsInstagram, BsFacebook, BsWhatsapp } from "react-icons/bs"
 
 function Footer() {
     return (
@@ -24,9 +25,15 @@ function Footer() {
                             <span className="text-tertiary-color sm:text-sm">les dernières nouvelles.</span>
                         </div>
                         <div className="flex flex-row justify-start items-center gap-x-4">
-                            <Link to="https://www.facebook.com/ISTA.ASSAKA.Page.Officielle" target='_blank' className='bg-tertiary-color opacity-50 w-12 h-12 rounded-full sm:w-10 sm:h-10' alt="Facebook"></Link>
-                            <Link to="" className='bg-tertiary-color opacity-50 w-12 h-12 rounded-full sm:w-10 sm:h-10' alt="Instagram"></Link>
-                            <Link to="https://web.whatsapp.com/send?phone=+212-5282-66448" target='_blank' className='bg-tertiary-color opacity-50 w-12 h-12 rounded-full sm:w-10 sm:h-10' alt="Whatsapp"></Link>
+                            <Link to="https://www.facebook.com/ISTA.ASSAKA.Page.Officielle" target='_blank' className='bg-tertiary-color opacity-50 w-12 h-12 rounded-full flex justify-center items-center text-xl text-primary-color sm:w-10 sm:h-10' alt="Facebook">
+                                <BsFacebook />
+                            </Link>
+                            <Link to="" className='bg-tertiary-color opacity-50 w-12 h-12 rounded-full flex justify-center items-center text-xl text-primary-color sm:w-10 sm:h-10' alt="Instagram">
+                                <BsInstagram />
+                            </Link>
+                            <Link to="https://web.whatsapp.com/send?phone=+212-5282-66448" target='_blank' className='bg-tertiary-color opacity-50 w-12 h-12 rounded-full flex justify-center items-center text-xl text-primary-color sm:w-10 sm:h-10' alt="Whatsapp">
+                                <BsWhatsapp />
+                            </Link>
                         </div>
                     </div>
                     <div className='flex flex-col justify-between'

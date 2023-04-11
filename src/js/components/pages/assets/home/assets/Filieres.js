@@ -3,8 +3,6 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 import FiliereCardHome from '../../filieres/FiliereCardHome';
-import NavBar from '../../commun/NavBar';
-import Footer from '../../commun/Footer';
 
 function Filieres() {
     const [filieres, setFilieres] = useState([]);
@@ -25,16 +23,15 @@ function Filieres() {
 
     return (
         <>
-            <NavBar />
-            <div className='grow'>
+            <div className='w-full h-fit '>
             <div className='px-12 py-6 flex flex-row justify-between items-center'>
-                    <div className='font-medium text-4xl text-primary-color
+                    <div className='font-medium text-4xl text-text-primary-color
                                     sm:text-3xl
                                     md:text-4xl'
                     >
                     Filières Ista Assaka
                     </div>
-                    <div className='px-4 py-3 bg-primary-color rounded-md hover:bg-hover-primary-color
+                    <div className='px-4 py-3 bg-extend-primary-color rounded-md hover:bg-hover-primary-color
                                     sm:px-2 sm:py-2
                                     md:px-3 md:py-3'
                     >
@@ -68,7 +65,6 @@ function Filieres() {
                     ))}
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

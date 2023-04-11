@@ -17,7 +17,7 @@ function NewsMiniCard({title, image, date, type}) {
                     <div className="flex flex-col basis-2/4 justify-between items-start gap-2 p-4
                                     md:gap-0"
                     >
-                        <div className="font-medium text-2xl py-4  break-words whitespace-normal overflow-hidden text-primary-color
+                        <div className="font-medium text-2xl py-4  break-words whitespace-normal overflow-hidden text-text-primary-color
                                         md:py-2"
                         >
                         {title}
@@ -43,7 +43,7 @@ function NewsMiniCard({title, image, date, type}) {
                     <div className="flex flex-col basis-2/4 justify-between items-start gap-2 p-4
                                     md:gap-0"
                     >
-                        <div className="font-medium text-2xl py-4 break-words whitespace-normal overflow-hidden text-primary-color
+                        <div className="font-medium text-2xl py-4 break-words whitespace-normal overflow-hidden text-text-primary-color
                                         md:py-2"
                         >
                         {title}

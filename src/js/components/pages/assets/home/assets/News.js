@@ -25,13 +25,13 @@ function News() {
         <>
             <div className='flex flex-col grow'>
                 <div className='px-12 py-6 flex flex-row justify-between items-center'>
-                    <div className='font-medium text-4xl text-primary-color
+                    <div className='font-medium text-4xl text-text-primary-color
                                     sm:text-3xl
                                     md:text-4xl'
                     >
                     Nouveautés
                     </div>
-                    <div className='px-4 py-3 bg-primary-color rounded-md hover:bg-hover-primary-color
+                    <div className='px-4 py-3 bg-extend-primary-color rounded-md hover:bg-hover-primary-color
                                     sm:px-2 sm:py-2
                                     md:px-3 md:py-3'
                     >

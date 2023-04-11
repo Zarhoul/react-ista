@@ -5,15 +5,15 @@ import { Link } from 'react-router-dom';
 import NavBar from '../../../navBar/NavBar';
 
 function ListFiliere() {
-    const [filieres, setFilieres] = useState([]);
+    const [news, setNews] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
     const [searchResults, setSearchResults] = useState([]);
 
     useEffect(() => {
-        axios.get('/data/filieres.json')
+        axios.get('/data/news.json')
         .then((response) => {
             console.log(response.data);
-            setFilieres(response.data);
+            setNews(response.data);
         })
         .catch((error) => {
             console.log(error);
@@ -23,13 +23,11 @@ function ListFiliere() {
     const handleSearch = (event) => {
         const query = event.target.value;
         setSearchQuery(query);
-        const results = filieres.filter((filiere) => {
+        const results = news.filter((n) => {
             return (
-                filiere.NameFormation.toLowerCase().includes(query.toLowerCase()) ||
-                filiere.NiveauFormation.toLowerCase().includes(query.toLowerCase()) ||
-                filiere.TypeFormation.toLowerCase().includes(query.toLowerCase()) ||
-                filiere.AnneeEtude.toLowerCase().includes(query.toLowerCase()) ||
-                filiere.NiveauScolaire.toLowerCase().includes(query.toLowerCase())
+                n.title.toLowerCase().includes(query.toLowerCase()) ||
+                n.date.toLowerCase().includes(query.toLowerCase()) ||
+                n.type.toLowerCase().includes(query.toLowerCase())
             );
         });
         setSearchResults(results);
@@ -41,19 +39,19 @@ function ListFiliere() {
                 <NavBar />
                 <div className='w-full h-full basis-11/12 flex flex-col p-4 bg-slate-300'>
                     <div className="px-4 py-2 text-3xl font-medium">
-                        Liste des filières
+                        Liste des nouveautés
                     </div>
                     <div className='p-4'>
                         <form className='flex flex-row gap-2'>
                         <input
                             type='text'
-                            placeholder='chercher une filière ...'
+                            placeholder='chercher une nouveauté ...'
                             className='w-full h-10 p-4 basis-5/6 flex justify-start items-center border-2 border-solid rounded-md border-extend-secondary-color-600 focus:outline-none focus:outline-2 focus:border-extend-secondary-color text-lg'
                             value={searchQuery}
                             onChange={handleSearch}
                         />                         
                             <Link to="/dashboardAdmin/application/filieres/addFiliere" className='w-full h-10 p-4 basis-1/6 flex text-sm font-medium text-tertiary-color justify-center items-center bg-primary-color rounded'>
-                                Ajouter une filière
+                                Ajouter une nouveauté
                             </Link>
                         </form>
                     </div>
@@ -62,28 +60,26 @@ function ListFiliere() {
                         <thead className='w-full table'>
                             <tr className='w-full p-4 border-b-2 flex justify-start items-center'>
                                 <th className='w-1/12 text-start'>N°</th>
-                                <th className='w-3/12 text-start'>Formation</th>
-                                <th className='w-2/12 text-start'>Niveau</th>
+                                <th className='w-5/12 text-start'>Titre</th>
+                                <th className='w-2/12 text-start'>Date</th>
                                 <th className='w-2/12 text-start'>Type</th>
-                                <th className='w-2/12 text-start'>Année étude</th>
                                 <th className='w-2/12 text-start'></th>
                             </tr>
                         </thead>
                         <tbody className='w-full h-80 block overflow-y-scroll'>
                         {
                             searchResults.length > 0 ? (
-                                searchResults.map((f)=> (
-                                    <tr className='w-full p-4 border-b-2 flex justify-start items-center' key={f.idFormation}>
-                                        <td className='w-1/12 text-start'>{f.idFormation}</td>
-                                        <td className='w-3/12 text-start'>{f.NameFormation}</td>
-                                        <td className='w-2/12 text-start'>{f.NiveauFormation}</td>
-                                        <td className='w-2/12 text-start'>{f.TypeFormation}</td>
-                                        <td className='w-2/12 text-start'>{f.AnneeEtude}</td>
+                                searchResults.map((n)=> (
+                                    <tr className='w-full p-4 border-b-2 flex justify-start items-center' key={n.id}>
+                                        <td className='w-1/12 text-start'>{n.id}</td>
+                                        <td className='w-5/12 text-start'>{n.title}</td>
+                                        <td className='w-2/12 text-start'>{n.date}</td>
+                                        <td className='w-2/12 text-start'>{n.type}</td>
                                         <td className='w-2/12 flex flex-row gap-2'>
-                                            <Link to={`/dashboardAdmin/application/filieres/detailsFiliere/${f.idFormation}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-blue-600">
+                                            <Link to={`/dashboardAdmin/application/news/detailsNew/${n.id}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-blue-600">
                                                 Détails
                                             </Link>
-                                            <Link to={`/dashboardAdmin/application/filieres/editFiliere/${f.idFormation}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-green-600">
+                                            <Link to={`/dashboardAdmin/application/news/editNew/${n.id}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-green-600">
                                                 Editer
                                             </Link>                                            
                                             <Link to="" className="p-2 rounded text-sm font-medium text-tertiary-color bg-red-600">
@@ -94,18 +90,17 @@ function ListFiliere() {
                                 ))
                             )
                             : (
-                                filieres.map((f)=> (
-                                    <tr className='w-full p-4 border-b-2 flex justify-start items-center' key={f.idFormation}>
-                                        <td className='w-1/12 text-start'>{f.idFormation}</td>
-                                        <td className='w-3/12 text-start'>{f.NameFormation}</td>
-                                        <td className='w-2/12 text-start'>{f.NiveauFormation}</td>
-                                        <td className='w-2/12 text-start'>{f.TypeFormation}</td>
-                                        <td className='w-2/12 text-start'>{f.AnneeEtude}</td>
+                                news.map((n)=> (
+                                    <tr className='w-full p-4 border-b-2 flex justify-start items-center' key={n.id}>
+                                        <td className='w-1/12 text-start'>{n.id}</td>
+                                        <td className='w-5/12 text-start'>{n.title}</td>
+                                        <td className='w-2/12 text-start'>{n.date}</td>
+                                        <td className='w-2/12 text-start'>{n.type}</td>
                                         <td className='w-2/12 text-start flex flex-row gap-2'>
-                                            <Link to={`/dashboardAdmin/application/filieres/detailsFiliere/${f.idFormation}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-blue-600">
+                                            <Link to={`/dashboardAdmin/application/news/detailsNew/${n.id}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-blue-600">
                                                 Détails
                                             </Link>
-                                            <Link to={`/dashboardAdmin/application/filieres/editFiliere/${f.idFormation}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-green-600">
+                                            <Link to={`/dashboardAdmin/application/news/editNew/${n.id}`} className="p-2 rounded text-sm font-medium text-tertiary-color bg-green-600">
                                                 Editer
                                             </Link>                                           
                                             <Link to="" className="p-2 rounded text-sm font-medium text-tertiary-color bg-red-600">

@@ -5,9 +5,9 @@ function NavBar() {
     return (
         <>
             <nav className="bg-primary-color opacity-95 max-w-full h-24 flex flex-row flex-wrap 
-                            sm:w-full sm:p-2 sm:flex-row sm:h-24
+                            sm:w-full sm:p-2 sm:flex-col sm:h-40
                             md:px-8 md:py-4
-                            lg:h-28 lg:px-8 lg:py-6
+                            lg:h-24 lg:px-6 lg:py-4 lg:flex lg:flex-row lg:justify-center lg:items-center
                             min-[320px]:h-96 max-[639px]:h-96
                             min-[320px]:flex-col max-[639px]:flex-col
                             min-[320px]:flex-wrap max-[639px]:flex-wrap

@@ -9,7 +9,7 @@ function FiliereCard({ NameFormation, url}) {
                                               md:w-80 md:h-48
                                               lg:w-72 lg:h-72'
     >
-      <div className='font-medium text-2xl break-words whitespace-normal overflow-hidden text-primary-color
+      <div className='font-medium text-2xl break-words whitespace-normal overflow-hidden text-text-primary-color
                       sm:text-xl
                       md:text-2xl
                       lg:text-3xl'

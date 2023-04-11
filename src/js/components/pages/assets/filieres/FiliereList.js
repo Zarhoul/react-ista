@@ -6,7 +6,8 @@ import Footer from '../commun/Footer';
 import FiliereCard from './FiliereCard';
 import Pagination from '../commun/Pagination';
 import FiliereCardLoading from './FiliereCardLoading';
-// import { Link } from 'react-router-dom';
+
+import { BsXSquare } from "react-icons/bs";
 
 function FiliereList() {
   const [filieres, setFilieres] = useState([]);
@@ -128,30 +129,30 @@ function FiliereList() {
               <option value="Cours du jour" className="text-gray-700 px-6 py-10 text-lg">Cours du jour</option>
               <option value="Cours du soir" className="text-gray-700 px-6 py-10 text-lg">Cours du soir</option>
             </select>
-            <div>
+            <div className='flex gap-2 text-extend-secondary-color-800 rounded-md items-center p-2 text-tertiary-color'>
               {niveauScolaire !== '' && (
-              <div className="bg-extend-secondary-color-200 text-extend-secondary-color-800 rounded-md flex items-center px-3 py-1">
+              <div className='flex flex-row gap-2 justify-center items-center text-tertiary-color bg-extend-primary-color rounded p-2'>
                   {niveauScolaire}
-                  <button onClick={() => setNiveauScolaire('')} className="ml-2 text-sm font-medium text-extend-secondary-color-800 hover:text-extend-secondary-color-900 focus:outline-none">
-                    x
+                  <button onClick={() => setNiveauScolaire('')} className="text-lg font-medium hover: focus:outline-none">
+                    <BsXSquare />
                   </button>
                 </div>
               )}
 
               {niveauFormation !== '' && (
-              <div className="bg-extend-secondary-color-200 text-extend-secondary-color-800 rounded-md flex items-center px-3 py-1">
+              <div className="flex flex-row gap-2 justify-center items-center text-tertiary-color bg-extend-primary-color rounded p-2">
                   {niveauFormation}
-                  <button onClick={() => setNiveauFormation('')} className="ml-2 text-sm font-medium text-extend-secondary-color-800 hover:text-extend-secondary-color-900 focus:outline-none">
-                    x
+                  <button onClick={() => setNiveauFormation('')} className="text-lg font-medium hover: focus:outline-none">
+                    <BsXSquare />
                   </button>
               </div>
             )}
 
               {modeFormation !== '' && (
-                <div className="bg-extend-secondary-color-200 text-extend-secondary-color-800 rounded-md flex items-center px-3 py-1">
+                <div className="flex flex-row gap-2 justify-center items-center text-tertiary-color bg-extend-primary-color rounded p-2">
                     {modeFormation}
-                    <button onClick={() => setModeFormation('')} className="ml-2 text-sm font-medium text-extend-secondary-color-800 hover:text-extend-secondary-color-900 focus:outline-none">
-                      x
+                    <button onClick={() => setModeFormation('')} className="text-lg font-medium hover: focus:outline-none">
+                      <BsXSquare />
                     </button>
                   </div>
                 )}

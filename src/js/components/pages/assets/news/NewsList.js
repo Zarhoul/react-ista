@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+import NavBar from '../commun/NavBar';
+import Footer from '../commun/Footer';
 import NewsCard from './NewsCard';
 import Pagination from '../commun/Pagination';
 import NewsCardLoading from './NewsCardLoading';
@@ -20,15 +22,15 @@ function NewsList() {
         }, 2000);
     
         axios
-          .get('/data/news.json')
-          .then((response) => {
-            console.log(response.data);
-            setNews(response.data);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
-      }, []);
+            .get('/data/news.json')
+            .then((response) => {
+                console.log(response.data);
+                setNews(response.data);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+        }, []);
 
     const handlePageChange = (pageNumber) => {
         setCurrentPage(pageNumber);
@@ -44,8 +46,9 @@ function NewsList() {
 
     return (
         <>
+        <NavBar />
             <div className="h-5/6 flex flex-col">
-            <div className="flex flex-col justify-center items-end px-32 py-6 gap-6">
+            <div className="flex flex-col justify-center items-end px-40 py-6 gap-6">
                 <input
                     type="text"
                     placeholder="Chercher..."
@@ -53,28 +56,25 @@ function NewsList() {
                     onChange={(e) => setSearchQuery(e.target.value)}
                     className='w-full h-14 p-4 flex justify-start items-center border-2 border-solid rounded-md border-extend-secondary-color-600 focus:outline-none focus:outline-2 focus:border-extend-secondary-color text-lg'
                 />
-                <button onClick={() => setFilterType(filterType === 'asc' ? 'desc' : 'asc')} className='w-fit px-4 py-3 bg-primary-color rounded-md hover:bg-hover-primary-color text-tertiary-color font-medium justify-center items-center gap-x-2'>
-                    {filterType === 'asc' ? 'Plus anciens' : 'Plus récents'}
-                </button>
             </div>
             {
                 isLoading 
                 ?
-                <div className="w-fit px-20 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
+                <div className="w-fit px-2 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
                 {filteredNews
                     .slice((currentPage - 1) * pageSize, currentPage * pageSize)
                     .map(( props ) => (
-                        <Link to={`/news/${props.id}&title=${props.title}`} className='w-fit flex flex-col basis-1/4 gap-x-4 shadow-xl hover:scale-95 transition duration-300'>
+                        <div className='w-fit flex flex-col basis-1/4 gap-x-4 shadow-xl hover:scale-95 transition duration-300'>
                             <NewsCardLoading {...props} key={props.id} />
-                        </Link>
+                        </div>
                     ))}
                 </div>
                 :
-                <div className="w-fit px-20 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
+                <div className="w-fit px-2 py-6 flex flex-row flex-wrap justify-center items-center gap-4">
                 {filteredNews
                     .slice((currentPage - 1) * pageSize, currentPage * pageSize)
                     .map(( props ) => (
-                        <Link to={`/news/${props.id}&title=${props.title}`} className='w-fit flex flex-col basis-1/4 gap-x-4 shadow-xl hover:scale-95 transition duration-300'>
+                        <Link to={`/news/newsDetails/${props.id}`} className='w-fit flex flex-col basis-1/4 gap-x-4 shadow-xl hover:scale-95 transition duration-300'>
                             <NewsCard {...props} key={props.id} />
                         </Link>
                     ))}
@@ -87,6 +87,7 @@ function NewsList() {
                 onPageChange={handlePageChange}
             />
         </div>
+        <Footer />
         </>
     )
 }

@@ -1,20 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+import InfosLoading from './InfosLoading';
+
 function Infos() {
+    
+    const [isLoading, setIsLoading] = useState(true); // <-- add loading state
+
+    useEffect(() => {
+        const timeoutId = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000);
+
+        return () => clearTimeout(timeoutId);
+    }, []);
+
     return (
         <>
-        <div className="w-full grow">
+        {
+            isLoading ?
+
+            <InfosLoading />
+
+            :
+            <div className="w-full grow">
             <div className='w-full flex flex-col relative'>
                 <div className='bg-cover bg-center bg-local bg-primary-color opacity-70'>
                     <img src="./images/image-1.jpg" alt='' className='w-full h-auto object-cover bg-cover bg-center bg-local bg-primary-color opacity-60' />
                 </div>
-                <div className='text-tertiary-color absolute inset-0 flex flex-col items-center justify-center'>
-                    <span className='font-medium text-8xl p-2 
-                                    sm:text-5xl
-                                    md:text-6xl
-                                    lg:text-7xl
-                                    xl:text-8xl
+                <div className='text-tertiary-color absolute inset-0 flex flex-col items-center justify-center gap-6'>
+                    <span className=' font-medium text-8xl p-2 
+                                    sm:text-5xl sm:p-2 
+                                    md:text-6xl md:p-2 
+                                    lg:text-7xl lg:p-2 
+                                    xl:text-8xl xl:p-2 
                                     min-[320px]:text-xl max-[639px]:text-xl
                                     min-[320px]:p-0 max-[639px]:p-0
                                     min-[320px]:justify-center max-[639px]:justify-center
@@ -53,6 +72,8 @@ function Infos() {
                 </div>
             </div>
         </div>
+        }
+        
         </>
     )
 }
